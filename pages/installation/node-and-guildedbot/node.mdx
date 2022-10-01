@@ -1,39 +1,39 @@
 import Callout from 'nextra-theme-docs/callout'
-# Installing Node.js and Guilded-Bot
-## Installing Node.js
+# Installing Node.js
 If you want use "Guilded-Bot", you need to install [Node.js](https://nodejs.org/en/) first. Node.js V16.14.0 or higher is required.
 
 <Callout emoji="📌" title="Note">
 If you already have Node.js installed, you can skip this step.
 </Callout>
 
-### Windows
+## Windows
 1. Go to [Node.js](https://nodejs.org/en/) and download the latest version.
 2. Run the installer and follow the instructions.
 3. Open a command prompt and type `node -v` to check if Node.js is installed correctly.
 
-### Linux
-#### Debian/Ubuntu
+## Linux
+### Debian/Ubuntu
 1. Run `sudo apt install nodejs` in a terminal.
 2. Run `sudo apt install npm` in a terminal.
 3. Run `node -v` in a terminal to check if Node.js is installed correctly.
-#### CentOS/Fedora/Red Hat
+### CentOS/Fedora/Red Hat
 1. Run `sudo dnf module install nodejs:16` in a terminal.
 2. Run `node -v` in a terminal to check if Node.js is installed correctly.
-#### Arch Linux
+### Arch Linux
 1. Run `sudo pacman -S nodejs` in a terminal.
 2. Run `node -v` in a terminal to check if Node.js is installed correctly.
-### macOS
-#### Homebrew
+
+## macOS
+### Homebrew
 1. Run `brew install node` in a terminal.
 2. Run `node -v` in a terminal to check if Node.js is installed correctly.
-#### MacPorts
+### MacPorts
 1. Run `port install nodejs16` in a terminal.
 2. Run `node -v` in a terminal to check if Node.js is installed correctly.
-#### pkgsrc
+### pkgsrc
 1. Run `pkgin install nodejs` in a terminal.
 2. Run `node -v` in a terminal to check if Node.js is installed correctly.
-#### Native Installer
+### Native Installer
 1. Run 
 ```bash
 curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/" && rm "$HOME/Downloads/node-latest.pkg"
